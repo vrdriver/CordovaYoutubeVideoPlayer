@@ -1,12 +1,21 @@
 #Cordova YoutubeVideoPlayer Plugin
 
-**Play Youtube Videos in a native Video Player on Android &amp; iOS.**
+This has been updated to work for Ionic 6 as at 2022 April 25th.
 
+I'm taking not credit for these changes, but needed to find a solution that was going to work for me. Others may find it helpful though.
+
+You can read more of the process in getting to these updates here:
+https://stephenmonro.wordpress.com/2022/04/13/getting-youtube-videos-to-play-again-in-ionic5/
+
+
+**Play Youtube Videos in a native Video Player on Android &amp; iOS.**
 **This fork works on Android 6, and does not force landscape mode on Android.**
 
 
-iOS plugin uses **XCDYouTubeKit** by Cédric Luthi:  
+Original iOS plugin uses **XCDYouTubeKit** by Cédric Luthi:  
 https://github.com/0xced/XCDYouTubeKit
+
+This repository now uses updated code at: https://github.com/vrdriver/XCDYouTubeKit
 
 Android version (up to 4.4) uses **OpenYoutubeActivity** by Keyes Labs:  
 https://code.google.com/p/android-youtube-player
@@ -36,11 +45,17 @@ For Android 5.0+ you will need to add the following to config.xml
 ```
 with your own YouTube Key.
 
+If you are using Capacitor, you'll potentially get a gradle error that will leave after you open the project and gradle files are built. The other thing is that you may need to add the following line to your Android project:
+Android/local.properties:
+
+    YOUTUBE_API_KEY="YOUR_YOUTUBE_API_KEY"
+
+
  For more information: https://developers.google.com/youtube/v3/getting-started
 
 The callback is called when the video window is closed.  (Work in Progress - should be working for IOS).
 
-##Author
+##Original Authors
 
 **Adrien Glitchbone**
 
