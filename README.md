@@ -20,7 +20,7 @@ https://code.google.com/p/gdata-issues/issues/detail?id=8244
 ##Installation
 
 ```sh
-cordova plugin add https://github.com/JonSmart/CordovaYoutubeVideoPlayer
+cordova plugin add https://github.com/vrdriver/CordovaYoutubeVideoPlayer
 ```
 
 ##Usage
