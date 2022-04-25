@@ -56,8 +56,16 @@
                 </feature>
             </config-file>
 
+            <podspec>
+                <config>
+                    <source url="https://github.com/CocoaPods/Specs.git"/>
+                </config>
+                <pods use-frameworks="true">
+                    <pod name="XCDYouTubeKit" git="https://github.com/kbex-dev/XCDYouTubeKit.git" branch="master"/>
+                </pods>
+            </podspec>
             
-            <framework src="XCDYouTubeKit" type="podspec" spec="~> 2.12" />
+            <framework src="XCDYouTubeKit" type="podspec" spec="~> 2.7" />
             <header-file src="platforms/ios/YoutubeVideoPlayerProject/Plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/YoutubeVideoPlayer.h"/>
             <source-file src="platforms/ios/YoutubeVideoPlayerProject/Plugins/com.bunkerpalace.cordova.YoutubeVideoPlayer/YoutubeVideoPlayer.m"/>
 
@@ -66,5 +74,7 @@
             <framework src="JavaScriptCore.framework"/>
 
         </platform>
+
+        
 
     </plugin>

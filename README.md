@@ -1,11 +1,4 @@
-I've forked this version, because I wanted to save it, as it builds on iOS 13
--Steve
-
-
-
 #Cordova YoutubeVideoPlayer Plugin
-
-
 
 **Play Youtube Videos in a native Video Player on Android &amp; iOS.**
 
