@@ -61,7 +61,7 @@
                     <source url="https://github.com/CocoaPods/Specs.git"/>
                 </config>
                 <pods use-frameworks="true">
-                    <pod name="XCDYouTubeKit" git="https://github.com/kbex-dev/XCDYouTubeKit.git" branch="master"/>
+                    <pod name="XCDYouTubeKit" git="https://github.com/vrdriver/XCDYouTubeKit.git" branch="master"/>
                 </pods>
             </podspec>
             
