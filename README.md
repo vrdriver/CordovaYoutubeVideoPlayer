@@ -1,4 +1,4 @@
-#Cordova YoutubeVideoPlayer Plugin
+# Cordova YoutubeVideoPlayer Plugin
 
 This has been updated to work for Ionic 6 as at 2022 April 25th.
 
@@ -26,13 +26,13 @@ https://developers.google.com/youtube/android/player/reference/com/google/androi
 Android with YouTube App Version 111662130 requires a workaround to resolve an App issue:
 https://code.google.com/p/gdata-issues/issues/detail?id=8244
 
-##Installation
+## Installation
 
 ```sh
 cordova plugin add https://github.com/vrdriver/CordovaYoutubeVideoPlayer
 ```
 
-##Usage
+## Usage
 
 ```javascript
 YoutubeVideoPlayer.openVideo('YOUTUBE_VIDEO_ID', function(result) { console.log('YoutubeVideoPlayer result = ' + result); });
@@ -55,7 +55,7 @@ Android/local.properties:
 
 The callback is called when the video window is closed.  (Work in Progress - should be working for IOS).
 
-##Original Authors
+## Original Authors
 
 **Adrien Glitchbone**
 
@@ -68,7 +68,7 @@ The callback is called when the video window is closed.  (Work in Progress - sho
 **trakout**
 + [https://github.com/trakout](https://github.com/trakout)
 
-##License
+## License
 
 CordovaYoutubeVideoPlayer is available under the MIT license. See the [LICENSE](LICENSE) file for more information.  
 XCDYouTubeKit is available under the MIT license.  
