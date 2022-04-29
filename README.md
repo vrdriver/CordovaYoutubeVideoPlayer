@@ -7,6 +7,30 @@ I'm taking not credit for these changes, but needed to find a solution that was 
 You can read more of the process in getting to these updates here:
 https://stephenmonro.wordpress.com/2022/04/13/getting-youtube-videos-to-play-again-in-ionic5/
 
+Specific updates for Ionic 6.
+
+## Installation - Updated for 2022
+
+```sh
+cordova plugin add https://github.com/vrdriver/CordovaYoutubeVideoPlayer
+```
+
+## Simple Usage for Angular
+
+The Usual imports for your module and ts files:
+
+```import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player/ngx';```
+
+The addition for your constructor:
+
+```constructor( public youtube:YoutubeVideoPlayer ) {}```
+
+Then, in your TS file, use this code to play a video:
+
+```this.youtube.openVideo('dQw4w9WgXcQ');   //opens video with videoId```
+   
+
+## Other information from the original fork
 
 **Play Youtube Videos in a native Video Player on Android &amp; iOS.**
 **This fork works on Android 6, and does not force landscape mode on Android.**
@@ -26,11 +50,7 @@ https://developers.google.com/youtube/android/player/reference/com/google/androi
 Android with YouTube App Version 111662130 requires a workaround to resolve an App issue:
 https://code.google.com/p/gdata-issues/issues/detail?id=8244
 
-## Installation
 
-```sh
-cordova plugin add https://github.com/vrdriver/CordovaYoutubeVideoPlayer
-```
 
 ## Usage
 
