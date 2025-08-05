@@ -1,3 +1,32 @@
+# Retirement of this cordova-plugin-youtube-video-player fork
+
+**Announcement**: As of August 2025, active development of my fork of `cordova-plugin-youtube-video-player` has ceased. This repository is no longer maintained, at this present time, and I don't recommend using this plugin for new projects due to the following issues:
+
+- **Unreliable Functionality**: The plugin encounters YouTube URL errors, likely due to outdated dependencies (e.g., `YouTubeAndroidPlayerApi.jar`, `XCDYouTubeKit`).
+- **Compatibility Issues**: It compiles with Node.js 18 but fails with Node.js 20, which is required by modern frameworks like Capacitor 7.0.0 and will be the way moving forward in the distant future.
+- **Lack of Maintenance**: The plugin is no longer actively updated, making it unsuitable for modern Android (API 34+) and iOS applications.
+- **Lack of Maintenance**: I don't have time, and there is a better alternative for the moment.
+
+## Recommended Alternative: @capacitor/app-launcher
+
+I would recommend switching to `@capacitor/app-launcher` for opening YouTube videos in the native YouTube app (or a browser fallback). Benefits include:
+- Compatibility with modern Capacitor projects (Node.js 20+, Android 14, iOS).
+- Support for YouTube Premium features (ad-free playback, background play) when users are logged in.
+- Seamless app return using deep links.
+- Simplified setup with minimal dependencies.
+
+### Installation
+```bash
+npm install @capacitor/app-launcher
+npx cap sync
+```
+
+For more information: https://capacitorjs.com/docs/apis/app-launcher
+
+------------------------
+
+And now for the original notice.....
+
 # Cordova YoutubeVideoPlayer Plugin
 
 This has been updated to work for Ionic 6 as at 2022 April 25th.
